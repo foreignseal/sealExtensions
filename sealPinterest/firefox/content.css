@@ -1,0 +1,85 @@
+:root {
+    background-color: #1d1d1d !important;
+    --darkest: #191716;
+    --dark: #2B2826;
+    --lightdark: #413C3A;
+    --darklight: #E4DDDE;
+    --light: #F1EDEE;
+}
+
+/* Sidebar */
+#VerticalNavContent
+{
+    background-color: var(--darkest) !important;
+    color: var(--dark) !important;
+    border-right-color: var(--darkest) !important;
+}
+
+/* Home feed and tab list */
+[data-test-id="header-background"],
+[data-test-id="homefeed-feed"] > :nth-child(2) > div,
+:has(> [role="tablist"])
+{
+    background-color: var(--darkest) !important;
+    color: var(--light) !important;
+}
+
+/* Search box */
+#searchBoxContainer div
+{
+    background-color: var(--dark) !important;
+    color: var(--light) !important;
+    border-radius: 8px !important;
+}
+
+/* Tablist Buttons */
+[role="tablist"] > a > div > div
+{
+    background-color: var(--darkest) !important;
+}
+[role="tablist"] > a > div > div > div > div > div > div
+{
+    color: var(--light) !important;
+}
+/*
+[role="tablist"] > a > div > div
+{
+    background-color: var(--darkest) !important;
+    color: var(--light) !important;
+    border-radius: 8px !important;
+}
+[role="tablist"] > a:hover > div > div
+{
+    background-color: var(--lightdark) !important;
+    color: var(--light) !important;
+    border-radius: 8px !important;
+}
+*/
+
+/* Button on the tablist */
+[data-root-margin="more-ideas-tabs"] > div > div > div > :nth-child(2) > div
+{
+    background: linear-gradient(to left, var(--darkest) 52%, #00000000 100%) !important;
+    top: 0 !important;
+    bottom: 0 !important;
+}
+[data-root-margin="more-ideas-tabs"] > div > div > div > :nth-child(2) > div > div > button > div > div
+{
+    background-color: var(--dark) !important;
+}
+[data-root-margin="more-ideas-tabs"] > div > div > div > :nth-child(2) > div > div > button > div > div > svg
+{
+    color: var(--light) !important;
+}
+
+/* Vertical tab icons */
+#VerticalNavContent > div > div > div > div > div > div > div > a > div > svg,
+#VerticalNavContent > div > div > div > div > div > div > div > div > button > div > div > svg
+{
+    color: var(--light) !important;
+}
+#VerticalNavContent > div > div > div > div:hover > div > div > div > a > div,
+#VerticalNavContent > div > div > div > div:hover > div > div > div > div > button > div > div
+{
+    background-color: var(--dark) !important;
+}

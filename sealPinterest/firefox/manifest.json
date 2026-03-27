@@ -4,10 +4,26 @@
   "version": "0.0.1",
   "description": "Custom styles for Pinterest",
 
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "icons/icon_48.png"
+    }
+  },
+
   "content_scripts": [
     {
       "matches": ["*://*.pinterest.com/*"],
-      "css": ["sealPinPatch.css"]
+      "js": ["content.js"]
+    }
+  ],
+
+  "permissions": [ "storage" ],
+
+  "web_accessible_resources": [
+    {
+      "resources": ["content.css"],
+      "matches": ["*://*.pinterest.com/*"]
     }
   ]
 
