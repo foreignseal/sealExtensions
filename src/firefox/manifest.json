@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "sealPinterest",
+  "version": "0.0.1",
+  "description": "Custom styles for Pinterest",
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.pinterest.com/*"],
+      "css": ["sealPinPatch.css"]
+    }
+  ]
+
+}
